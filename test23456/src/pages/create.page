@@ -1,0 +1,6 @@
+<apex:page >
+ <apex:outputLink value="https://c.ap2.visual.force.com/apex/createteam">createteam</apex:outputLink><br></br>
+ <apex:outputLink value="https://c.ap2.visual.force.com/apex/enterplayer" >enter player</apex:outputLink><br></br>
+ <apex:outputLink value="https://ap2.salesforce.com/a0M/o" >team members</apex:outputLink>
+ 
+</apex:page>

@@ -1,0 +1,23 @@
+<apex:page standardController="Team__c" extensions="newpage" >
+  <apex:form >
+  <apex:pageBlock title="team info">
+  
+  <apex:pageBlockSection >
+  
+              <apex:inputField value="{!Team__c.Name}"/>
+              <apex:inputField value="{!Team__c.Club_Captain__c}"/>
+              <apex:inputField value="{!Team__c.Current_Team_Size__c}"/>
+              <apex:inputField value="{!Team__c.Team_Location__c}"/>
+              <apex:inputField value="{!Team__c.Wage_Budget__c}"/>
+  </apex:pageBlockSection>
+
+         <apex:pageBlockButtons >
+                   <apex:commandButton value="save" action="{!save}"/>
+                   <apex:commandButton value="cancel" action="{!cancel}"/>
+         </apex:pageBlockButtons>
+
+ 
+ 
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

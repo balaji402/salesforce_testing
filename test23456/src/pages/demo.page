@@ -1,0 +1,13 @@
+<apex:page sidebar="false">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  <apex:form >
+  Name:<apex:inputText id="name" /><br></br>
+  Address:<apex:inputTextarea id="address"/><br></br>
+  gender:male<apex:selectRadio id="male"/>
+  
+  
+  This is your new Page
+    </apex:form>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

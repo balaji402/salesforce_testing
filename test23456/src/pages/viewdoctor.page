@@ -1,0 +1,9 @@
+<apex:page standardcontroller="Doctor__c" recordSetVar="display"  >
+    <apex:PageBlock >
+    
+   <apex:repeat value="{!display}" var="disp">
+  <apex:outputLink value="/apex/schedule">{!disp.name} </apex:outputLink><br></br>
+  </apex:repeat>
+     
+  </apex:PageBlock>
+</apex:page>

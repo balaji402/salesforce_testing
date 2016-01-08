@@ -1,0 +1,8 @@
+<apex:page standardController="Schedule__c" recordSetVar="timing" >
+  
+         <apex:repeat value="{!timing}" var="t">
+            
+             <apex:outputLink >{!t.Time_Slot__c}</apex:outputLink><br></br>
+           </apex:repeat> 
+        
+</apex:page>
