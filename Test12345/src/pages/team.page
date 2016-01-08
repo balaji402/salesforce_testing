@@ -1,0 +1,19 @@
+<apex:page standardController="Team_Scenario__c" sidebar="false" showHeader="false" Extensions="CreateTeam">
+    <apex:form >
+        <apex:PageBlock title="Team">
+            <apex:pageBlockSection title="Team Details" collapsible="True">
+                <apex:inputField value="{!Team_Scenario__c.Name}"/>
+                <apex:inputField value="{!Team_Scenario__c.Club_Captain__c}"/>
+                <apex:inputField value="{!Team_Scenario__c.Current_Team_Size__c}"/>
+                <apex:inputField value="{!Team_Scenario__c.Team_Location__c}"/>
+                <apex:inputField value="{!Team_Scenario__c.Wage_Budget__c}"/>
+            </apex:pageBlockSection>
+            <apex:PageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!Save}"/>
+                <apex:commandButton value="Cancel" action="{!Cancel}"/>
+            </apex:PageBlockButtons>
+        </apex:PageBlock>
+    </apex:form>
+
+ 
+</apex:page>

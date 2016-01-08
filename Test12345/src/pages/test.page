@@ -1,0 +1,14 @@
+<apex:page sidebar="false" showHeader="false" controller="mylink">
+  <apex:form >
+      <apex:pageBlock title="Test">
+          <apex:pageBlockSection title="Links" collapsible="false">
+              <apex:commandLink reRender="testing" value="as" action="{!setlink}"/>
+          </apex:pageBlockSection>
+          <apex:pageBlockSection title="Output" collapsible="false">
+              <apex:outputpanel id="testing">
+                  {!link}
+              </apex:outputpanel>
+          </apex:pageBlockSection>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

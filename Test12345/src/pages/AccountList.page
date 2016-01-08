@@ -1,0 +1,17 @@
+<apex:page standardController="Account" recordSetVar="accounts">
+2
+	    <apex:pageBlock title="Accounts">
+3
+	        <apex:repeat value="{!Accounts}" var="a">
+4
+	            <li>
+5
+	                <apex:outputLink value="/{!a.id}">{!a.Name}</apex:outputLink>
+6
+	            </li>
+7
+	        </apex:repeat>
+8
+	    </apex:pageBlock>
+9
+	</apex:page>

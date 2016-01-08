@@ -1,0 +1,70 @@
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false" controller="doc">
+    <style>
+    body{
+    background-color:skyblue;
+    }
+    .wrapper{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    }
+    .se{
+    margin: 1% 10% 2% 10%;
+    background-color: white;
+    padding-bottom:40%;
+    
+    }
+    .se1{
+    margin: 1% 5% 2% 2%;
+    text-align:left;
+    position: absolute;
+    left: 10%;
+    width:20%;
+    font-weight: bold;
+    background-color:pink;
+    padding-bottom:30%;
+    }
+    .se2{
+    margin: 1% 5% 2% 1%;
+    position: absolute;
+    right: 7%;
+    text-align:left;
+    width:55%;
+    align:right;
+    background-color:aqua;
+    padding-bottom:30%;
+    }
+    .h{
+    margin: 0% 10% 0% 10%;
+    background-color: white;
+    padding-bottom:10%;
+    }
+    </style>
+    
+    <body>
+    <apex:form >
+        <div class="wrapper">
+            <div class="h">
+            
+            </div>
+            <div class="se"><br/>
+                <div class="se1"><br/><br/>
+                    Choose a doctor to see details: <br/><br/>
+                    <select name="doctor">
+                        <option value=" ">Select</option>
+                        <option value="XYZ">XYZ</option>
+                        <option value="ABC">ABC</option>
+                    </select>&nbsp;
+                    <apex:commandbutton action="{!setlink}" rerender="result" value="Submit" />
+                </div>
+                <div class="se2">
+                    <apex:outputPanel id="result">
+                        {!link}
+                    </apex:outputpanel>
+                </div>
+            </div>
+        </div>
+    </apex:form>
+    </body>
+  
+</apex:page>

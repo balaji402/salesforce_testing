@@ -1,0 +1,13 @@
+<apex:page standardController="Player_Scenario__c" sidebar="false" showHeader="false" extensions="finalpage">
+<apex:form >
+      <apex:PageBlock title="Player">
+            <apex:pageBlockSection title="Player Details" collapsible="True">
+             <h1>To See Team Details Click GO</h1>
+            </apex:pageBlockSection>
+            <apex:PageBlockButtons location="bottom">
+                <apex:commandButton value="Go" action="{!go}"/>
+                <apex:commandButton value="Cancel" action="{!Cancel}"/>
+            </apex:PageBlockButtons>
+         </apex:PageBlock>
+  </apex:form>
+</apex:page>
